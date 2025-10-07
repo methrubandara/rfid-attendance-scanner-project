@@ -13,6 +13,22 @@ An RFID-based attendance tracking system that combines Arduino hardware with a w
 - Web dashboard to view logs and attendance
 - SQL schema for users, cards, and attendance logs
 
+## Credits / License
+
+AMSA Full Stack Development Class Project:
+
+- Brian Bakkala
+- Panapitiyage Methru Bandara
+- Manraaj Singh
+- Aneesh Guda
+- Gabriel Hurez-Soler
+- James Clayton
+- Dylan Zickus
+- Michael Domino
+- Austin Gavin
+
+
+
 ## Project Structure
 
 ```text
@@ -159,17 +175,4 @@ Create a `config.php` with `$host`, `$username`, `$password`, `$dbname` variable
 2. Register users and associate their RFID UIDs.
 3. Scan a card: the system logs timestamp (check‑in/out) and displays status.
 4. View attendance history and export if available.
-
-## Credits / License
-
-AMSA Full Stack Development Class Project
-- Brian Bakkala
-- Panapitiyage Methru Bandara
-- Manraaj Singh
-- Aneesh Guda
-- Gabriel Hurez-Soler
-- James Clayton
-- Dylan Zickus
-- Michael Domino
-- Austin Gavin
 
