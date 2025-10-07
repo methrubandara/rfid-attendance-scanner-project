@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+ html, body {
+	 height: 100%;
+	 margin: 0;
+}
+ .container {
+	 height: 100%;
+	 display: flex;
+	 flex-wrap: wrap;
+}
+ .column {
+	 flex-basis: 50%;
+	 height: 50%;
+}
+ @media screen and (max-width: 600px) {
+	 .column {
+		 flex-basis: 100%;
+		 height: 25%;
+	}
+}
+ @media screen and (min-width: 1800px) {
+	 .column {
+		 flex-basis: 25%;
+		 height: 100%;
+	}
+}
+/* general styles */
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: "Roboto", sans-serif;
+	 color: #ccc;
+	 background: #000;
+	/*margin-bottom: 70px;
+	*/
+	 overflow: hidden;
+}
+ .tilt, .tilt-box {
+	 margin: 0;
+	 padding: 0;
+	/*border: 1px solid #666;
+	*/
+	 box-sizing: border-box;
+}
+ .tilt-box1 {
+	 background-color: #39f;
+}
+ .tilt-box1 .tilt-box-inner {
+	 background: rgba(51, 153, 255, 0.2);
+}
+ .tilt-box2 {
+	 background-color: #fb0;
+}
+ .tilt-box2 .tilt-box-inner {
+	 background: rgba(255, 187, 0, 0.2);
+}
+ .tilt-box3 {
+	 background-color: #5c9;
+}
+ .tilt-box3 .tilt-box-inner {
+	 background: rgba(85, 204, 153, 0.2);
+}
+ .tilt-box4 {
+	 background-color: #f33;
+}
+ .tilt-box4 .tilt-box-inner {
+	 background: rgba(255, 51, 51, 0.2);
+}
+ .topcontainer {
+	 position: fixed;
+	 width: 30vw;
+	 height: 40vh;
+	 top: 30vh;
+	 left: 35vw;
+	 background: black;
+	 contnet: "";
+	 z-index: 550;
+	 display: flex;
+	 align-items: center;
+	 border-radius: 6px;
+}
+/* ------ */
+ .tilt {
+	 transform-style: preserve-3d;
+	 margin: 0;
+	 padding: 0;
+}
+ .tilt:hover {
+	 z-index: 300;
+}
+ .tilt.tilt-box {
+	 box-shadow: 0 20px 70px -10px rgba(0, 0, 0, 0.7), 0 50px 100px 0 rgba(0, 0, 0, 0.2);
+}
+ .tilt a.tilt-box-inner {
+	 width: 60%;
+	 height: 60%;
+	 bottom: 0px;
+	 position: absolute;
+	 color: white;
+	 transform: translateZ(80px) translateY(-50%) translateX(-50%);
+	 text-decoration: none;
+	 text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+}
+ .tilt a.tilt-box-inner:hover {
+	 color: black;
+	 text-decoration: none;
+	 text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.7);
+}
+ .tilt .tilt-box-inner {
+	 top: 50%;
+	 left: 50%;
+	 display: block;
+	 display: flex;
+	 justify-content: center;
+	 align-content: center;
+	 align-items: center;
+}
+/* -------------------------- */
+/* ANIMATED LINE border style */
+/* -------------------------- */
+ .Wrapline.animLine::before, .Wrapline.animLine::after {
+	 content: "";
+	 width: 2rem;
+	 height: 2rem;
+	 border: 1px solid #fff;
+	 position: absolute;
+	 z-index: 2;
+	 opacity: 0.3;
+	 transition: 1.5s;
+}
+ .Wrapline.animLine::before {
+	 top: 2rem;
+	 right: 2rem;
+	 border-bottom-width: 0;
+	 border-left-width: 0;
+}
+ .Wrapline.animLine::after {
+	 bottom: 2rem;
+	 left: 2rem;
+	 border-top-width: 0;
+	 border-right-width: 0;
+}
+ .Wrapline.animLine.inverted::before {
+	 left: 2rem;
+	 top: 2rem;
+	 border-bottom-width: 0;
+	 border-right-width: 0;
+	 border-left-width: 1px;
+}
+ .Wrapline.animLine.inverted::after {
+	 bottom: 2rem;
+	 right: 2rem;
+	 left: 0;
+	 top: auto;
+	 left: auto;
+	 border-top-width: 0;
+	 border-left-width: 0;
+	 border-right-width: 1px;
+}
+ .Wrapline:hover.animLine::before, .Wrapline:hover.animLine::after {
+	 width: calc(100% - 4.1rem);
+	 height: calc(100% - 4.1rem);
+	 pointer-events: none;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Test</title>
+</head>
+<body>
+
+<h1>WebSocket Test</h1>
+
+<button id="connectButton">Connect to Server</button>
+<button id="sendButton">Send Message</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+
+<script>
+    new WebSocket('ws://localhost:3000'); // Update with the correct server URL
+    new WebSocket('wss://localhost:3000'); // Update with the correct server URL
+    new WebSocket('wss://localhost'); // Update with the correct server URL
+    new WebSocket('wss://amsaeagleeye.org:3000'); // Update with the correct server URL
+    new WebSocket('ws://amsaeagleeye.org:3000'); // Update with the correct server URL
+
+    socket.addEventListener('open', (event) => {
+        console.log('WebSocket connection opened:', event);
+
+        // Enable the "Send Message" button when the connection is open
+        document.getElementById('sendButton').disabled = false;
+    });
+
+    socket.addEventListener('message', (event) => {
+        console.log('Message from server:', event.data);
+    });
+
+    socket.addEventListener('close', (event) => {
+        console.log('WebSocket connection closed:', event);
+
+        // Disable the "Send Message" button when the connection is closed
+        document.getElementById('sendButton').disabled = true;
+    });
+
+    socket.addEventListener('error', (event) => {
+        console.error('WebSocket error:', event);
+    });
+
+    // Function to send a message to the server
+    function sendMessage() {
+        const message = prompt('Enter a message to send:');
+        if (message !== null) {
+            socket.send(message);
+        }
+    }
+
+    // Attach the sendMessage function to the "Send Message" button click event
+    document.getElementById('sendButton').addEventListener('click', sendMessage);
+
+    // Connect to the server when the page loads
+    document.getElementById('connectButton').addEventListener('click', () => {
+        socket.close();  // Close the existing connection (if any)
+        socket.open();   // Open a new connection
+    });
+</script>
+
+</body>
+</html>

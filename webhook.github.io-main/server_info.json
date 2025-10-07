@@ -1,0 +1,50 @@
+{
+	"static_ip": "34.195.106.180",
+	"ftp_user": {
+		"host": "34.195.106.180",
+		"authentication_type": "basic",
+		"user": "fullstack",
+		"password": "AM$AEagle!123",
+		"github_secrets_url": "https://github.com/FullStackAMSA/webhook.github.io/settings/secrets/actions"
+	},
+	"aws_login_info": {
+		"Manraaj": {
+			"user": "msingh2024",
+			"initial_password": "DefaultFullStack!",
+			"login_url": "https://004389103235.signin.aws.amazon.com/console"
+		},
+		"Gabe": {
+			"user": "ghurez-soler2024",
+			"initial_password": "DefaultFullStack!",
+			"login_url": "https://004389103235.signin.aws.amazon.com/console",
+			"ssl_stuff": "https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-using-lets-encrypt-certificates-with-wordpress"
+		},
+		"Austin": {
+			"user": "agavin2024",
+			"initial_password": "o7Cr!3#!",
+			"login_url": "https://004389103235.signin.aws.amazon.com/console"
+		},
+		"Michael": {
+			"user": "mdomino2024",
+			"initial_password": "nC9h5*$4",
+			"login_url": "https://004389103235.signin.aws.amazon.com/console"
+		}
+	},
+	"database_info": {
+		"endpoint": "ls-caa94c87a9ea82ec60f0fc05a0b0e3f71dcae6bb.cxmnzdfrue4n.us-east-1.rds.amazonaws.com",
+		"port": "3306",
+		"url": "http://34.195.106.180/db?db=dbmaster",
+		"user": "dbmasteruser",
+		"password": "M*yzY(B(y&!_1!>WUxx.H8R~50+:m395"
+	},
+	"class_emails": [
+		"pbandara2024@student.amsacs.org",
+		"jclayton2024@student.amsacs.org",
+		"mdomino2024@student.amsacs.org",
+		"agavin2024@student.amsacs.org",
+		"aguda2024@student.amsacs.org",
+		"ghurez-soler2024@student.amsacs.org",
+		"msingh2024@student.amsacs.org",
+		"dzickus2024@student.amsacs.org"
+	]
+}

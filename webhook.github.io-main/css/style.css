@@ -1,0 +1,131 @@
+body {
+	background: whitesmoke;
+	background-size: 400% 400%;
+	height: 100vh;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    padding-top: 80px;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.r{
+    text-align: center;
+    color: black;
+}
+
+.present {
+    background-color: green;
+    opacity: 0.5;
+}
+
+.absent {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.titlegrid
+{
+    display:grid;
+    grid-auto-rows: 1fr;
+    border: solid black;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: white;
+
+}
+
+.studentgrid
+{
+    display:grid;
+    grid-auto-rows: 1fr;
+    border: solid black;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: black;
+}
+
+.columnName
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 40px;
+              
+}
+
+
+.student
+{
+    font-size: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                  
+}
+
+.topimages
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border: solid black;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.live {
+    transform: scale(0.3);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.row {
+    display:grid;
+    grid-row-gap: 1px;
+}
+
+.class2
+{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 2em;
+}
+
+.back
+{
+    border: solid black;
+
+}
+#clock
+{
+    font-size: 35px;
+
+}
+#className 
+{
+    font-size: 50px
+}
+#bloc
+{
+    font-size: 60px
+}

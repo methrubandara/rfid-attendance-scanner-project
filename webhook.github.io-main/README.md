@@ -1,0 +1,1 @@
+were setting up a website. bouta be mad dope. we already got a dark mode and its hacker proof. what else you need

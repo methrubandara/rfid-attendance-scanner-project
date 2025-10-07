@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+</body>
+</html>
+
+his is the home page
+
+<B>hello</B>
+<B>Does this change it?<B>
+    <B>Does this change it?<B>
+
+
+        <head>
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/datatables.min.css">
+            <title>Attendance Table</title>
+        </head>
+        <body>
+            <div class="container">
+                <h4 class="text center"> Attendence Table </h4>
+                <table class="display">
+                    <thead>
+                        <tr>
+                            <th class="">First Name</th>
+                            <th class="">Last Name</th>
+                            <th class="">Class Name</th>
+                            <th class="">Card ID</th>
+                            <th class="">Scan in Time</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <script src="js/jQuery-3.1.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js.datatables.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('display').DataTable();
+                });
+            </script>
