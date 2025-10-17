@@ -20,13 +20,7 @@ AMSA Full Stack Development Class Project:
 - Brian Bakkala
 - Panapitiyage Methru Bandara
 - Manraaj Singh
-- Aneesh Guda
-- Gabriel Hurez-Soler
 - James Clayton
-- Dylan Zickus
-- Michael Domino
-- Austin Gavin
-
 
 
 ## Project Structure
